@@ -1,13 +1,18 @@
 # [Docker](https://www.docker.com/)
 
 ### Installation:
-1. Download [Docker Community Edition](https://www.docker.com/community-edition) (Free)
+- Download [Docker Community Edition](https://www.docker.com/community-edition) (Free)
     * to see Mac OS `sw_vers`
     * to see Linux OS `cat /etc/*release*`
-2. Install Docker based on OS
 
+### Docker Commands
+- Docker Command Line ([CLI](https://docs.docker.com/engine/reference/commandline/cli/))
+- [Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet)
+
+
+### [Docker Store](https://store.docker.com/) / [Docker Hub](https://hub.docker.com/explore/)
 
 
 ### References 
-- Docker Command Line ([CLI](https://docs.docker.com/engine/reference/commandline/cli/))
+
 
