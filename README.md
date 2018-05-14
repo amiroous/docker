@@ -110,7 +110,8 @@
 
 # VOLUME ["/var/log/", "/var/db"]
 # VOLUME /var/log /var/db
-# creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers.
+### 
+### creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers.
 
 # USER <user>[:<group>]
 ### sets the user name (or UID) and optionally the user group (or GID) to use when running the image and for any RUN, CMD and ENTRYPOINT instructions that follow it in the Dockerfile
