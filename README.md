@@ -82,6 +82,55 @@
 | `docker login` | always do logout after your done |
 | `docker logout` |  |
 
+
+#### Docker Compose
+> Combination of command line tools [CLI](https://docs.docker.com/compose/reference/) and a [configuration file](https://docs.docker.com/compose/compose-file/#compose-file-structure-and-examples).
+> Compose is a tool for defining and running multi-container Docker applications
+
+| Command | Description|
+| --- | --- |
+| `docker-compose --help` |  |
+| `docker-compose -f <docker-compose-file-name>` |  |
+| `docker-compose up` | setup volumes/networks and start all containers |
+| `docker-compose down` | stop all containers and remove container/volume/networks |
+| `docker-compose down -v` |  |
+| `docker-compose down -v --rmi` |  |
+
+* `docker-compose.yml` is default config file but could be anything you want (use `docker-compose -f <docker-compose-file-name>`)
+
+```dockerfile
+# if no version is specificed then v1 is assumed. Recommend v2 minimum
+version: '3.1'
+
+# containers. same as docker run
+services:
+
+    # a friendly name. this is also DNS name inside network
+    servicename:
+        
+        # Optional if you use build:
+        image:
+        
+        # Optional, replace the default CMD specified by the image
+        command:
+        
+        # Optional, same as -e in docker run
+        environment:
+        
+        # Optional, same as -v in docker run
+        volumes:
+        
+    servicename2:
+
+# Optional, same as docker volume create
+volumes:
+
+# Optional, same as docker network create
+networks:
+
+
+```
+
 ### Docker File
 - [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 
