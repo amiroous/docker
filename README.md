@@ -47,6 +47,7 @@
 | `docker container rm` | Remove one or more containers |
 |  |  |
 | `docker container logs mylocalhost` | Fetch the logs of a container |
+| `docker container logs  -f mylocalhost` | Fetch the logs of a container and follow it |
 | `docker container top mylocalhost` | Display the running processes of a container |
 | `docker container inspect mylocalhost` | Display detailed information on one or more containers |
 | `docker container stats` | Display a live stream of container(s) resource usage statistics |
