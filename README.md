@@ -23,10 +23,10 @@
 | `docker container ls` | List containers (`docker ps`) |
 | `docker container ls --help` |  |
 | `docker container ls -a` |  |
-| `docker container ls -aq | xargs docker container stop` |  |
-| `docker container ls -aq | xargs docker container rm` |  |
-| `docker container ls -aq | xargs docker container stop; docker container ls -aq | xargs docker container rm;` |  |
-| `docker container ls -aq | xargs docker container stop; docker container ls -aq | xargs docker container rm;` |  |
+| `docker container ls -aq &#124; xargs docker container stop` |  |
+| `docker container ls -aq &#124; xargs docker container rm` |  |
+| `docker container ls -aq &#124; xargs docker container stop; docker container ls -aq &#124; xargs docker container rm;` |  |
+| `docker container ls -aq &#124; xargs docker container stop; docker container ls -aq &#124; xargs docker container rm;` |  |
 | `docker container stop $(docker container ls -aqf name=memcached_api)` |  |
 | `docker container run` | Run a command in a new container (more things behind the scene) |
 | `docker container run --publish 80:80 --name mylocalhost --detach nginx` | Host (Machine) Port : Docker Container Port |
