@@ -25,8 +25,8 @@
 | `docker container ls -a` |  |
 | `docker container ls -aq \| xargs docker container stop` |  |
 | `docker container ls -aq \| xargs docker container rm` |  |
-| `docker container ls -aq \| xargs docker container stop; docker container ls -aq \| xargs docker container rm;` |  |
-| `docker container ls -aq \| xargs docker container stop; docker container ls -aq \| xargs docker container rm;` |  |
+| `docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q)` | Stop all containers, Remove all containers, Remove all images |
+| `docker container ls -aq \| xargs docker container stop && docker container ls -aq \| xargs docker container rm && docker images ls -aq \| xargs docker rmi` |  |
 | `docker container stop $(docker container ls -aqf name=memcached_api)` |  |
 | `docker container run` | Run a command in a new container (more things behind the scene) |
 | `docker container run --publish 80:80 --name mylocalhost --detach nginx` | Host (Machine) Port : Docker Container Port |
