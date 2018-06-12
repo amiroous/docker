@@ -70,7 +70,8 @@
 | --- | --- |
 | `docker history IMAGE[:TAG]` | Show the history of an image |
 | `docker image ls` |  |
-| `docker image ls -aq` |  |
+| `docker image ls -a` |  |
+| `docker image rm $(docker image ls -a \| grep IMAGE)` |  |
 | `docker image rm IMAGE[:TAG]` |  |
 | `docker image pull IMAGE[:TAG]` |  |
 | `docker image push IMAGE[:TAG]` |  |
