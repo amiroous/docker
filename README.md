@@ -77,6 +77,8 @@
 | `docker image push IMAGE[:TAG]` |  |
 | `docker image tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]` |  |
 | `docker image build -t [:TAG] . ` |  |
+| `docker rmi $(docker images \| grep "^<none>" \| awk "{print $3}")` | Remove all untagged images |
+| `docker image ls -a \| grep "^<none>" \| awk "{print $3}"` | Remove all untagged images and intermediate images |
 
 #### Docker Log
 | Command | Description|
